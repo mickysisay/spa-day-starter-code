@@ -4,7 +4,7 @@ body {
 
 div {
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 10px;
     text-align: center;
     background-color: white;
@@ -23,4 +23,65 @@ table {
             width: 50%;
             padding: 10px;
             text-align: center;
+}
+.row
+{
+    display: table;
+
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.column
+{
+    display: table-cell;
+   width:20px;
+    height:20px;
+    border :2px solid black;
+     font-size:20px;
+     font-weight:bold;
+    /*Optional*/
+}
+.column:hover{
+ background-color:black;
+ color:white;
+}
+.columns{
+  display:table-cell;
+  border:5px;
+  font-size:20px;
+  border-radius:20px;
+
+}
+.box{
+
+}
+.brown{
+ background-color:brown;
+}
+.aqua{
+ background-color:aqua;
+}
+.red{
+  background-color:red;
+}
+.green{
+  background-color:green;
+}
+.yellow{
+  background-color:yellow;
+}
+.gold{
+  background-color:gold;
+}
+.grey{
+  background-color:grey;
+}
+.white{
+  background-color:white;
+}
+.blue{
+  background-color:blue;
+}
+.purple{
+  background-color:purple;
 }

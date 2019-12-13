@@ -5,11 +5,29 @@
     <title>Spa Menu</title>
     <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
 </head>
-<body>
+<div >
 <h1>My Super Fancy Spa</h1>
-<div id = "clientProfile">
+<div class="row">
+<div class="columns aqua" id = "clientProfile">
+    <h2>My Profile</h2>
+    <p th:text="${name}"></p>
+    <p th:text="${skintype}"></p>
+    <p th:text="${manipedi}"></p>
 </div>
-<div id = "servicesMenu">
+<div id = "servicesMenu" class="columns brown">
+    <h2>Menu of available services</h2>
+    <th:block th:each="appropriate : ${appropriateFacials}">
+        <p th:text="${appropriate}"></p>
+    </th:block>
+    <div class="brown">
+    <h2 th:text="${manipedi}"></h2>
+    <p th:replace="fragments :: ${manipedi}+'Description'"></p>
+
+    </div>
 </div>
+</div>
+
+</div>
+<footer th:replace="fragments :: footer"></footer>
 </body>
 </html>
